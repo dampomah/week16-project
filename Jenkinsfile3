@@ -13,7 +13,7 @@ pipeline {
         }
         stage('python script') {
             agent {
-                docker { image 'python:3.9-slim' }
+                docker { image 'python' }
             }
             steps {
                 sh 'python --version'
