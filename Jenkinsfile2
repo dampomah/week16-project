@@ -6,7 +6,7 @@ pipeline {
     stages{
         stage('maven commands'){
             steps{
-                sh 'mvn clen compile install package'
+                sh 'mvn clen test compile install package'
             }
         }
     }
