@@ -8,6 +8,7 @@ pipeline {
             steps{
                 withSonarQubeEnv('sonarserver'){ 
               sh 'mvn verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=dampomah_geolocation'
+             // sh 'mvn sonar:sonar'
             }
             }
         }
